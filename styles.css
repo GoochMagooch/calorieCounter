@@ -48,6 +48,7 @@ h2 {
     border-radius: 3px;
     font-family: monospace;
     font-weight: bold;
+    background-color: #D9D9D9;
 }
 
 #measurement {
@@ -57,6 +58,7 @@ h2 {
     margin-right: 25px;
     font-family: monospace;
     font-weight: bold;
+    background-color: #D9D9D9;
 }
 
 .output-button {
