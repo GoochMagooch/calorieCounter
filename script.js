@@ -1,6 +1,6 @@
 let inputFood = document.getElementById('enter-food')
 let quantity = document.getElementById('quant')
-let measurement = document.getElementById('measurement') // on hold for now
+let measurement = document.getElementById('measurement')
 let calculate = document.getElementById('calculate')
 let output = document.getElementById('output')
 let outputVal = output.innerText
