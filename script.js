@@ -12,13 +12,23 @@ let caloriesOz = {"chicken": 68,
                   "turkey": 54,
                   "salmon": 59}
 
+// calculates calories from entered food
 calculate.addEventListener('click', function() {
     output.textContent = outputVal
     let food = inputFood.value.toLowerCase()
     let amount = quantity.value
+    let measured = measurement.value.toLowerCase()
     if (!amount) {
-        output.textContent += ' ' + caloriesOz[food]
+        if (measured === 'lb') {
+            output.textContent += ' ' + caloriesOz[food] * 16
+        } else {
+            output.textContent += ' ' + caloriesOz[food]
+        }
     } else {
-        output.textContent += ' ' + caloriesOz[food] * amount
+        if (measured === 'lb') {
+            output.textContent += ' ' + caloriesOz[food] * amount * 16
+        } else {
+            output.textContent += ' ' + caloriesOz[food] * amount
+        }
     }
 })
