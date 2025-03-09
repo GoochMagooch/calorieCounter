@@ -5,5 +5,5 @@ let caloriesOz = {"chicken": 68}
 
 calculate.addEventListener('click', function() {
     let food = inputFood.value
-    output.textContent += `${caloriesOz.food}`
+    output.textContent += caloriesOz[food]
 })
