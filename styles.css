@@ -3,6 +3,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .container {
@@ -84,4 +85,8 @@ button {
     padding: 5px 8px;
     font-family: monospace;
     font-weight: bold;
+}
+
+.note {
+    font-size: 18px;
 }
