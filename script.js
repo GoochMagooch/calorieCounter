@@ -21,16 +21,10 @@ calculate.addEventListener('click', function() {
     let amount = quantity.value
     let measured = measurement.value
     if (!amount) {
-        if (measured === 'lb') {
-            output.textContent += ' ' + caloriesOz[food] * 16
-        } else {
-            output.textContent += ' ' + caloriesOz[food]
-        }
+        measured === 'lb' ? output.textContent += ' ' + caloriesOz[food] * 16 : 
+        output.textContent += ' ' + caloriesOz[food]
     } else {
-        if (measured === 'lb') {
-            output.textContent += ' ' + caloriesOz[food] * amount * 16
-        } else {
-            output.textContent += ' ' + caloriesOz[food] * amount
-        }
+        measured === 'lb' ? output.textContent += ' ' + caloriesOz[food] * amount * 16 : 
+        output.textContent += ' ' + caloriesOz[food] * amount
     }
 })
