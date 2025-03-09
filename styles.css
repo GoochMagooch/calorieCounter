@@ -33,8 +33,7 @@ h2 {
     border-radius: 5px;
 }
 
-input {
-    height: 25%;
+#enter-food {
     margin-left: 25px;
     border: 1px solid black;
     border-radius: 3px;
@@ -42,13 +41,13 @@ input {
 }
 
 #quant {
-    width: 10%;
+    width: 7%;
     border: 1px solid black;
     border-radius: 3px;
 }
 
 #measurement {
-    width: 10%;
+    width: 18%;
     border: 1px solid black;
     border-radius: 3px;
     margin-right: 25px;
