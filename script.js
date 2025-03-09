@@ -20,11 +20,10 @@ calculate.addEventListener('click', function() {
     let food = inputFood.value
     let amount = quantity.value
     let measured = measurement.value
-    if (!amount) {
-        measured === 'lb' ? output.textContent += ' ' + caloriesOz[food] * 16 : 
-        output.textContent += ' ' + caloriesOz[food]
+    if (!food || !amount || !measured) {
+        alert("fill out all fields")
     } else {
-        measured === 'lb' ? output.textContent += ' ' + caloriesOz[food] * amount * 16 : 
-        output.textContent += ' ' + caloriesOz[food] * amount
+        measured === 'oz' ? output.textContent += ' ' + caloriesOz[food] * amount : 
+        output.textContent += ' ' + caloriesOz[food] * amount * 16
     }
 })
