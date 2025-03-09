@@ -6,10 +6,12 @@ let output = document.getElementById('output')
 let outputVal = output.innerText
 
 // Object holds foods and calories in 1oz
-let caloriesOz = {"chicken": 68, 
+let caloriesOz = {"chicken (white)": 34,
+                  "chicken (dark)": 61,
+                  "turkey (white)": 43,
+                  "turkey (dark)": 46,
                   "beef": 71,
                   "lamb": 83,
-                  "turkey": 54,
                   "salmon": 59}
 
 // calculates calories from entered food
