@@ -38,12 +38,16 @@ h2 {
     border: 1px solid black;
     border-radius: 3px;
     background-color: #D9D9D9;
+    font-family: monospace;
+    font-weight: bold;
 }
 
 #quant {
     width: 7%;
     border: 1px solid black;
     border-radius: 3px;
+    font-family: monospace;
+    font-weight: bold;
 }
 
 #measurement {
@@ -51,6 +55,8 @@ h2 {
     border: 1px solid black;
     border-radius: 3px;
     margin-right: 25px;
+    font-family: monospace;
+    font-weight: bold;
 }
 
 .output-button {
@@ -74,4 +80,6 @@ button {
     border: none;
     border-radius: 3px;
     padding: 5px 8px;
+    font-family: monospace;
+    font-weight: bold;
 }
