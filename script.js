@@ -55,5 +55,4 @@ calculate.addEventListener('click', function() {
 // clear calories database
 clear.addEventListener('click', function() {
     location.reload()
-    alert('foods have been cleared.')
 })
