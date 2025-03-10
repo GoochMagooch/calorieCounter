@@ -55,5 +55,6 @@ calculate.addEventListener('click', function() {
 // clear calories database
 clear.addEventListener('click', function() {
     storedFoods = []
+    output.textContent = outputVal
     alert('foods have been cleared.')
 })
