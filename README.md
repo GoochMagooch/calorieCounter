@@ -1,1 +1,1 @@
-# calorieCounter
+# recommended calories for body weight and height
