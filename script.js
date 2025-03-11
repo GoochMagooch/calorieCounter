@@ -38,12 +38,14 @@ addFood.addEventListener('click', function() {
     if (!food || !amount || !measured) {
         alert("fill out all fields")
     } else {
-        if (measured === 'oz') {
+        if (food === small || food === medium || food === large) {
             argValueOz += caloriesOz[food] * amount
             storeFoods(argValueOz)
-        } else {
+        } else if (measured === 'lb') {
             argValueLb += caloriesOz[food] * amount * 16
             storeFoods(argValueLb)
+        } else if (measured === 'oz') {
+            argValueOz += caloriesOz[food] * amount
         }
     }
 })
@@ -58,6 +60,7 @@ calculate.addEventListener('click', function() {
         if (!food || !amount || !measured) {
             alert("fill out all fields")
         } else {
+            food === small || medium || large ? output.textContent += ' ' + caloriesOz[food] * amount : 
             measured === 'oz' ? output.textContent += ' ' + caloriesOz[food] * amount : 
             output.textContent += ' ' + caloriesOz[food] * amount * 16
         }
