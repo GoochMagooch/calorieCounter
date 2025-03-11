@@ -15,7 +15,10 @@ let caloriesOz = {"chicken (white)": 34,
                   "turkey (dark)": 46,
                   "beef": 71,
                   "lamb": 83,
-                  "salmon": 59}
+                  "salmon": 59,
+                  "pizza slice (small)": 250,
+                  "pizza slice (medium)": 260,
+                  "pizza slice (large)": 300}
 
 // stores foods in array to be calculated
 function storeFoods(value) {
