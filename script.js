@@ -44,12 +44,25 @@ addFood.addEventListener('click', function() {
 
 // calculates calories from entered food
 calculate.addEventListener('click', function() {
-    output.textContent = outputVal
-    let total = 0
-    for (let i = 0; i < storedFoods.length; i++) {
-        total += storedFoods[i]
+    if (storedFoods.length === 0) {
+        output.textContent = outputVal
+        let food = inputFood.value
+        let amount = quantity.value
+        let measured = measurement.value
+        if (!food || !amount || !measured) {
+            alert("fill out all fields")
+        } else {
+            measured === 'oz' ? output.textContent += ' ' + caloriesOz[food] * amount : 
+            output.textContent += ' ' + caloriesOz[food] * amount * 16
+        }
+    } else {
+        output.textContent = outputVal
+        let total = 0
+        for (let i = 0; i < storedFoods.length; i++) {
+            total += storedFoods[i]
+        }
+        output.textContent += ' ' + total
     }
-    output.textContent += ' ' + total
 })
 
 // clear calories database
