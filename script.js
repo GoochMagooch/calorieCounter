@@ -19,6 +19,9 @@ let caloriesOz = {"chicken (white)": 34,
                   "pizza slice (small)": 250,
                   "pizza slice (medium)": 260,
                   "pizza slice (large)": 300}
+let small = Object.keys(caloriesOz)[7]
+let medium = Object.keys(caloriesOz)[8]
+let large = Object.keys(caloriesOz)[9]
 
 // stores foods in array to be calculated
 function storeFoods(value) {
