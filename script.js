@@ -42,7 +42,7 @@ addFood.addEventListener('click', function() {
     }
 })
 
-// calculates calories from entered food
+// calculates calories from stored foods array or single food
 calculate.addEventListener('click', function() {
     if (storedFoods.length === 0) {
         output.textContent = outputVal
