@@ -1,3 +1,6 @@
+const apiURL = 'https://api.fda.gov/drug/label.json'
+const apiKey = 'UgKeiMD72xWGSMHhStpFbPLXFmFWexfxC2HgrWwa'
+
 let inputFood = document.getElementById('enter-food')
 let quantity = document.getElementById('quant')
 let measurement = document.getElementById('measurement')
